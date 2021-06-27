@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Lexend Deca', sans-serif; */
+}
+
+.card {
+    width:75%;
+    margin: 140px auto;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card .card__message {
+    /* width: 50%; */
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.card__message .card_message-heading {
+    color: hsl(0, 0%, 100%);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.card__message .card_message-paragraph{
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.card_message-heading span {
+    color: hsl(277, 64%, 61%);
+}
+
+
+.card__stats {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card__stat {
+    /* width: 33%; */
+    flex: 1;
+}
+
+.card__stat h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+.card__stat p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.card .card__background {
+    /* width: 50%; */
+    flex:1;
+    background-color: ivory;
+}
+
+
+
+.card .card__background img {
+
+    width: 100%;
+    display:block;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+}
+
+@media (max-width:540px){
+
+    .card_message-heading{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .card {
+       flex-direction: column;
+       width: 95%;
+    }
+
+    .card .card__background {
+        order: -1;
+    }
+
+    .card .card__background img {
+
+        border-top-right-radius: 5px;
+        border-top-left-radius:5px;
+        border-bottom-right-radius: 0;
+    }
+
+    .card__stats {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .card__stat {
+        /* width: 80%; */
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .card__stat p {
+        font-size: 1rem;
+    }
+}
